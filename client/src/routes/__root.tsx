@@ -1,5 +1,5 @@
 import { HeadContent, Scripts, createRootRoute } from '@tanstack/react-router';
-import { TanStackRouterDevtools } from '@tanstack/react-router-devtools';
+// import { TanStackRouterDevtools } from '@tanstack/react-router-devtools';
 
 // import Header from '../components/Header'
 // import PWAStatus from '../components/PWAStatus'
@@ -96,7 +96,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
       </head>
       <body className="font-display">
         {children}
-        <TanStackRouterDevtools />
+        {/* <TanStackRouterDevtools /> */}
         <Scripts />
       </body>
     </html>
