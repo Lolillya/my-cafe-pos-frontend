@@ -20,12 +20,16 @@
     @apply h-screen;
   }
 
+  main {
+    @apply flex max-h-screen max-w-screen h-full w-full;
+  }
+
   input {
     @apply border rounded-md p-3 border-border shadow-md focus:outline-none text-sm;
   }
 
   section {
-    @apply h-full;
+    @apply h-full w-full;
   }
 
   label {
