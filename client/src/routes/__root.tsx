@@ -3,14 +3,14 @@ import {
   Outlet,
   Scripts,
   createRootRoute,
-} from '@tanstack/react-router'
-import { TanStackRouterDevtools } from '@tanstack/react-router-devtools'
+} from '@tanstack/react-router';
+import { TanStackRouterDevtools } from '@tanstack/react-router-devtools';
 
 // import Header from '../components/Header'
 // import PWAStatus from '../components/PWAStatus'
 
-import appCss from '../styles.css?url'
-import { NotFound } from '@/components/not-found'
+import appCss from '../styles.css?url';
+import { NotFound } from '@/components/not-found';
 
 export const Route = createRootRoute({
   head: () => ({
@@ -91,14 +91,14 @@ export const Route = createRootRoute({
   notFoundComponent: NotFound,
 
   shellComponent: RootLayout,
-})
+});
 
 function RootLayout() {
   return (
     <RootDocument>
       <Outlet />
     </RootDocument>
-  )
+  );
 }
 
 function RootDocument({ children }: { children: React.ReactNode }) {
@@ -107,7 +107,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
       <head>
         <HeadContent />
       </head>
-      <body>
+      <body className="font-display">
         {/* <Header /> */}
         {children}
         {/* <PWAStatus /> */}
@@ -115,5 +115,5 @@ function RootDocument({ children }: { children: React.ReactNode }) {
         <Scripts />
       </body>
     </html>
-  )
+  );
 }
