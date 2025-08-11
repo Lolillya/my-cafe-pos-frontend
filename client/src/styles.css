@@ -21,11 +21,19 @@
   }
 
   input {
-    @apply border rounded-md p-2;
+    @apply border rounded-md p-3 border-border shadow-md focus:outline-none text-sm;
   }
 
   section {
     @apply h-full;
+  }
+
+  label {
+    @apply text-primary text-sm;
+  }
+
+  button {
+    @apply text-center w-full text-sm p-4 rounded-lg shadow-lg hover:shadow-xl cursor-pointer border border-border;
   }
 }
 
