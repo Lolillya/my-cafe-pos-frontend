@@ -1,9 +1,4 @@
-import {
-  HeadContent,
-  Outlet,
-  Scripts,
-  createRootRoute,
-} from '@tanstack/react-router';
+import { HeadContent, Scripts, createRootRoute } from '@tanstack/react-router';
 import { TanStackRouterDevtools } from '@tanstack/react-router-devtools';
 
 // import Header from '../components/Header'
@@ -90,16 +85,8 @@ export const Route = createRootRoute({
 
   notFoundComponent: NotFound,
 
-  shellComponent: RootLayout,
+  shellComponent: RootDocument,
 });
-
-function RootLayout() {
-  return (
-    <RootDocument>
-      <Outlet />
-    </RootDocument>
-  );
-}
 
 function RootDocument({ children }: { children: React.ReactNode }) {
   return (
@@ -108,9 +95,7 @@ function RootDocument({ children }: { children: React.ReactNode }) {
         <HeadContent />
       </head>
       <body className="font-display">
-        {/* <Header /> */}
         {children}
-        {/* <PWAStatus /> */}
         <TanStackRouterDevtools />
         <Scripts />
       </body>
