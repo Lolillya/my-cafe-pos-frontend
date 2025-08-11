@@ -1,18 +1,12 @@
-import { SearchIcon } from '@/components/ui/icons';
+import { SearchCategory } from './_components/search-category';
+import { CategoryButtons } from './_components/category-buttons';
 
 const MenuPage = () => {
   return (
-    <section>
+    <section className="bg-bg1">
       <div className="container">
-        <div className="flex items-center">
-          <h3>Choose Category</h3>
-          <div className="relative flex items-center">
-            <input type="text" placeholder="Search cateroy or menu..." />
-            <div className="absolute right-0">
-              <SearchIcon />
-            </div>
-          </div>
-        </div>
+        <SearchCategory />
+        <CategoryButtons />
       </div>
     </section>
   );
