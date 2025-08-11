@@ -9,7 +9,7 @@ import {
 
 export const Sidebar = () => {
   return (
-    <aside className="w-20 bg-bg2 min-h-screen shadow-xl border border-border z-0">
+    <aside className="w-[15%] bg-bg2 min-h-screen shadow-xl border border-border z-0">
       <div className="p-2 flex flex-col justify-between h-full">
         <div className=" flex flex-col gap-10">
           <img src={Logo} alt="logo" />

@@ -9,6 +9,7 @@
   --color-primary: #704232;
   --color-border: #e2e2e6;
   --color-accent: #a86f53;
+  --color-badge: #f5f0ef;
 
   --color-success: #6ca87d;
   --color-warning: #e0a458;
@@ -36,8 +37,37 @@
     @apply text-primary text-sm;
   }
 
+  span {
+    @apply text-primary text-sm;
+  }
+
   button {
-    @apply text-center w-full text-sm p-4 rounded-lg shadow-lg hover:shadow-xl cursor-pointer border border-border;
+    @apply text-center w-full text-sm p-4 rounded-2xl shadow-lg hover:shadow-xl cursor-pointer border border-border;
+  }
+
+  /* HEADING STYLES */
+  h1 {
+    @apply text-5xl sm:text-8xl font-bold text-primary leading-tight tracking-tight capitalize;
+  }
+
+  h2 {
+    @apply text-3xl sm:text-4xl font-bold text-primary leading-tight tracking-tight capitalize;
+  }
+
+  h3 {
+    @apply text-2xl sm:text-3xl font-semibold text-primary leading-tight capitalize;
+  }
+
+  h4 {
+    @apply text-xl sm:text-2xl font-semibold text-primary leading-snug capitalize;
+  }
+
+  h5 {
+    @apply text-lg sm:text-xl font-medium text-primary leading-snug capitalize;
+  }
+
+  h6 {
+    @apply text-base sm:text-lg font-medium text-primary leading-snug capitalize;
   }
 }
 
