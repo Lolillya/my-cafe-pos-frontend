@@ -18,7 +18,7 @@
 
 @layer base {
   body {
-    @apply h-screen;
+    @apply h-screen overflow-hidden;
   }
 
   main {
@@ -72,5 +72,5 @@
 }
 
 .container {
-  @apply max-h-screen max-w-screen h-full w-full px-10 py-5;
+  @apply max-h-screen max-w-screen h-full w-full px-5 py-5;
 }
