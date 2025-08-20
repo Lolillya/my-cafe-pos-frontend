@@ -8,6 +8,29 @@ import {
 } from '@/components/ui/icons';
 
 export const Sidebar = () => {
+  const sidebarItems = [
+    {
+      text: 'Home',
+      icon: <HomeIcon />,
+    },
+    {
+      text: 'Menu',
+      icon: <BellIcon />,
+    },
+    {
+      text: 'History',
+      icon: <HistoryIcon />,
+    },
+    {
+      text: 'Settings',
+      icon: <SettingsIcon />,
+    },
+    {
+      text: 'Logout',
+      icon: <LogoutIcon />,
+    },
+  ];
+
   return (
     <aside className="w-[15%] bg-bg2 min-h-screen shadow-xl border border-border z-0">
       <div className="p-2 flex flex-col justify-between h-full">
