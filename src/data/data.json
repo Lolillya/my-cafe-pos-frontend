@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "name": "Iced Americano",
+    "description": "Smooth espresso over ice.",
+    "price": 200
+  },
+  {
+    "id": 2,
+    "name": "Cappuccino",
+    "description": "Rich espresso with foamy milk.",
+    "price": 230
+  },
+  {
+    "id": 3,
+    "name": "Latte",
+    "description": "Creamy milk with a shot of espresso.",
+    "price": 240
+  },
+  {
+    "id": 4,
+    "name": "Cold Brew",
+    "description": "Slow-steeped coffee over ice.",
+    "price": 220
+  },
+  {
+    "id": 5,
+    "name": "Espresso",
+    "description": "Strong and bold single shot.",
+    "price": 145
+  },
+  {
+    "id": 6,
+    "name": "Mocha",
+    "description": "Espresso with chocolate and milk.",
+    "price": 260
+  },
+  {
+    "id": 7,
+    "name": "Flat White",
+    "description": "Smooth espresso with silky milk.",
+    "price": 230
+  },
+  {
+    "id": 8,
+    "name": "Caramel Macchiato",
+    "description": "Espresso with caramel drizzle.",
+    "price": 270
+  }
+]

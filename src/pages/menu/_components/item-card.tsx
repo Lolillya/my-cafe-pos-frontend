@@ -1,16 +1,26 @@
 import { Button } from '@/components/ui/button';
+import { ProductType } from '@/types/item-card.types';
+import { NumericFormat } from 'react-number-format';
+type Props = {
+  item: ProductType;
+};
 
-export const ItemCard = () => {
+export const ItemCard = ({ item }: Props) => {
   return (
     <div className="p-3 rounded-xl flex flex-col bg-white">
       <div className="flex">
         <div className="w-30 h-24 rounded-xl bg-gray-400" />
         <div className="px-2 flex flex-col justify-between">
-          <span>Iced Americano</span>
-          <span className="text-justify">
-            Lorem ipsum dolor sit amet, consectetur
-          </span>
-          <span>$99.99</span>
+          <span>{item.name}</span>
+          <span className="text-justify">{item.description}</span>
+          <NumericFormat
+            value={item.price}
+            displayType="text"
+            decimalScale={2}
+            fixedDecimalScale
+            prefix="₱"
+          />
+          {/* <span>{item.price}</span> */}
         </div>
       </div>
 
